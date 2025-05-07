@@ -2,7 +2,7 @@ import 'package:http/http.dart' as http;
 
 
 class ESP32Controller {
-  static const String esp32Ip = "http://192.168.1.7";  // Update IP
+  static const String esp32Ip = "http://192.168.107.165";  // Update IP
 
   static Future<void> toggleLED(bool turnOn) async {
     final String url = "$esp32Ip/led/${turnOn ? 'on' : 'off'}";
